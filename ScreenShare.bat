@@ -286,6 +286,30 @@ echo.
     echo.
 )
 
+>nul findstr /c:"2022/08/03:04:03:04" %link% && (
+    echo - ComboXereca encontrado
+    echo - BlueStacks-Installer_4.240.30.1002_amd64_native.exe
+    echo.
+)
+
+>nul findstr /c:"2022/08/03:04:03:57" %link% && (
+    echo - ComboXereca encontrado
+    echo - chrome.exe
+    echo.
+)
+
+>nul findstr /c:"2022/08/03:04:06:18" %link% && (
+    echo - ComboXereca encontrado
+    echo - Discord.exe
+    echo.
+)
+
+>nul findstr /c:"2022/08/03:04:04:47" %link% && (
+    echo - ComboXereca encontrado
+    echo - RiotClientServices.exe
+    echo.
+)
+
 >nul findstr /c:"2058/08/12:02:35:05" %link% && (
     echo - Suspect Client encontrado
     echo - BlueStacks-Installer_4.240.30.1002_amd64_native.exe
@@ -410,6 +434,30 @@ echo.
 >nul findstr /c:"0xa38000" %link% && (
     echo - ComboXereca encontrado
     echo - invisivel
+    echo.
+)
+
+>nul findstr /c:"0xa46000" %link% && (
+    echo - ComboXereca encontrado
+    echo - chrome.exe
+    echo.
+)
+
+>nul findstr /c:"0xb9c000" %link% && (
+    echo - ComboXereca encontrado
+    echo - BlueStacks-Installer_4.240.30.1002_amd64_native.exe
+    echo.
+)
+
+>nul findstr /c:"0xb36000" %link% && (
+    echo - ComboXereca encontrado
+    echo - Discord.exe
+    echo.
+)
+
+>nul findstr /c:"0xbb4000" %link% && (
+    echo - ComboXereca encontrado
+    echo - RiotClientServices.exe
     echo.
 )
 
@@ -548,7 +596,7 @@ echo Precione qualquer tecla para voltar ao menu
 :Pcaclient
 color d
 cls
-powershell Invoke-WebRequest "https://cdn.discordapp.com/attachments/1005436388939927642/1005471623085821952/ScannerPcaClient.exe" -OutFile "C:\Windows\temp\ScannerPcaClient.exe 
+powershell Invoke-WebRequest "https://cdn.discordapp.com/attachments/1005436388939927642/1006317171086983298/PcaClient_Events.exe" -OutFile "C:\Windows\temp\ScannerPcaClient.exe 
 cls
 cd C:\Windows\temp\ScannerPcaClient.exe
 start C:\Windows\temp\ScannerPcaClient.exe
